@@ -1,0 +1,20 @@
+{
+  "name": "oauth-redirect",
+  "version": "1.0.0",
+  "description": "Test server to simulate OAuthV2 Authorization & Token requests ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OAuth",
+    "Testing"
+  ],
+  "bin": {"oauth-redirect":"./server.js"},
+  "author": "Josh Lipps",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
