@@ -23,10 +23,8 @@ app.post('/token', function(req, res){
   res.json({refresh_token: 'refresh_token_response'});
 });
 
-// app.listen(5000);
-
 function run(port){
-  app.listen(5000);
+  app.listen( process.env.OAUTH_REDIRECT_PORT || 5000);
 }
 
-module.export.run = run()
+run();
