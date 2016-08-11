@@ -26,7 +26,9 @@ app.post('/token', function(req, res){
 });
 
 function run(port){
-  app.listen( process.env.OAUTH_REDIRECT_PORT || 5000);
+  var port = process.env.OAUTH_REDIRECT_PORT || 5000;
+  console.log('Statring server on: '  + port);
+  app.listen(port);
 }
 
 run();
